@@ -10,8 +10,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: MuseumMain(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily: 'Staatliches'),
+      home: const MuseumMain(),
     );
   }
 }
